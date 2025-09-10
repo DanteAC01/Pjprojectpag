@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+   <title>Tienda | Joyería</title>
+</head>
+
+<body class="pt-16">
+   <header>
+      <nav class="fixed top-0 left-0 w-full z-50 bg-white shadow-md p-2">
+         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16">
+
+               <!-- Logo -->
+               <div class="flex items-center">
+                  <span class="text-2xl font-bold text-indigo-600">MiLogo</span>
+               </div>
+
+               <!-- Menú escritorio -->
+               <div class="hidden md:flex space-x-6 items-center">
+                  <a href="/index.html" class="text-gray-700 hover:text-indigo-600 font-medium">Inicio</a>
+                  <a href="/pages/galery.html" class="text-gray-700 hover:text-indigo-600 font-medium">Galeria</a>
+                  <a href="/pages/about_us.html" class="text-gray-700 hover:text-indigo-600 font-medium">Acerca de</a>
+                  <a href="/pages/contact.html" class="text-gray-700 hover:text-indigo-600 font-medium">Contacto</a>
+               </div>
+
+               <!-- Botón hamburguesa -->
+               <div class="flex items-center md:hidden">
+                  <button id="menu-btn" class="text-gray-700 hover:text-indigo-600 focus:outline-none">
+                     <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
+                     </svg>
+                  </button>
+               </div>
+            </div>
+         </div>
+
+         <!-- Menú móvil -->
+         <div id="mobile-menu" class="hidden md:hidden px-4 pb-4">
+            <a href="/index.html" class="block py-2 text-gray-700 hover:text-indigo-600 font-medium">Inicio</a>
+            <a href="/pages/galery.html" class="block py-2 text-gray-700 hover:text-indigo-600 font-medium">Galeria</a>
+            <a href="/pages/about_us.html" class="block py-2 text-gray-700 hover:text-indigo-600 font-medium">Acerca
+               de</a>
+            <a href="/pages/contact.html"
+               class="block py-2 text-gray-700 hover:text-indigo-600 font-medium">Contacto</a>
+         </div>
+      </nav>
+   </header>
+   <main>
+      <section class="relative bg-gradient-to-r from-white via-gray-200 to-gray-200 text-gray-900">
+         <div class="max-w-7xl mx-auto px-6 lg:px-8 py-20 grid md:grid-cols-2 gap-12 items-center">
+
+            <!-- Texto -->
+            <div class="space-y-6">
+               <p class="text-sm tracking-wide text-gray-600">
+                  Brillo que cautiva, una joya tan única como tú.
+               </p>
+               <h1 class="text-5xl font-extrabold tracking-tight">
+                  <span class="text-gray-900">Colección</span>
+                  <span class="bg-gradient-to-r from-yellow-400 to-yellow-600 bg-clip-text text-transparent">
+                     Corazón del sol
+                  </span>
+               </h1>
+               <p class="text-lg text-gray-700">
+                  Una colección diseñada para reflejar tu elegancia con sutileza y frescura.
+               </p>
+               <a href="#"
+                  class="inline-block px-6 py-3 rounded-full bg-gradient-to-r from-yellow-300 to-yellow-500 hover:from-yellow-400 hover:to-yellow-600 transition text-gray-900 font-semibold shadow-md">
+                  Comprar ahora
+               </a>
+            </div>
+
+            <!-- Imagen -->
+            <div class="flex justify-center">
+               <img src="/img/exhibicion-cadena-oro-brillante-elegante.png" alt="Colección Corazón del sol"
+                  class="w-[400px] drop-shadow-xl">
+            </div>
+
+         </div>
+      </section>
+
+      <section class="bg-gray-50 py-12">
+         <div class="max-w-7xl mx-auto px-6 relative">
+            <h2 class="text-2xl font-bold text-center text-gray-800 mb-8">
+               Ofertas Exclusivas
+            </h2>
+
+            <!-- Botones de flecha -->
+            <button id="prev"
+               class="absolute left-0 top-1/2 -translate-y-1/2 bg-white shadow-lg p-3 rounded-full hover:bg-gray-200 transition">
+               &#10094;
+            </button>
+            <button id="next"
+               class="absolute right-0 top-1/2 -translate-y-1/2 bg-white shadow-lg p-3 rounded-full hover:bg-gray-200 transition">
+               &#10095;
+            </button>
+
+            <!-- Contenedor scroll horizontal -->
+            <div id="offer-carousel"
+               class="flex space-x-6 overflow-x-auto scrollbar-hide snap-x snap-mandatory scroll-smooth px-10">
+
+               <!-- Producto -->
+               <div class="min-w-[280px] bg-white rounded-xl shadow-md snap-center text-center">
+                  <img src="/img/2150329711.jpg" alt="Anillo oro" class="w-full h-48 object-cover rounded-t-xl">
+                  <div class="p-4">
+                     <h3 class="font-semibold text-gray-800">Anillo de oro</h3>
+                     <p class="text-sm text-gray-500">Antes <span class="line-through">$1,200</span></p>
+                     <p class="text-lg font-bold text-yellow-600">$950</p>
+                  </div>
+               </div>
+
+               <!-- Producto -->
+               <div class="min-w-[280px] bg-white rounded-xl shadow-md snap-center text-center">
+                  <img src="/img/joyas-de-lujo-en-exhibicion.jpg" alt="Collar perlas"
+                     class="w-full h-48 object-cover rounded-t-xl">
+                  <div class="p-4">
+                     <h3 class="font-semibold text-gray-800">Collar de perlas</h3>
+                     <p class="text-sm text-gray-500">Antes <span class="line-through">$800</span></p>
+                     <p class="text-lg font-bold text-yellow-600">$650</p>
+                  </div>
+               </div>
+
+               <!-- Producto -->
+               <div class="min-w-[280px] bg-white rounded-xl shadow-md snap-center text-center">
+                  <img src="/img/pendientesoro.jpg" alt="Pulsera plata" class="w-full h-48 object-cover rounded-t-xl">
+                  <div class="p-4">
+                     <h3 class="font-semibold text-gray-800">Pendientes de oro</h3>
+                     <p class="text-sm text-gray-500">Antes <span class="line-through">$400</span></p>
+                     <p class="text-lg font-bold text-yellow-600">$299</p>
+                  </div>
+               </div>
+
+               <!-- Producto -->
+               <div class="min-w-[280px] bg-white rounded-xl shadow-md snap-center text-center">
+                  <img src="/img/pulseraplata.jpg" alt="Pulsera plata" class="w-full h-48 object-cover rounded-t-xl">
+                  <div class="p-4">
+                     <h3 class="font-semibold text-gray-800">Pulsera de plata</h3>
+                     <p class="text-sm text-gray-500">Antes <span class="line-through">$400</span></p>
+                     <p class="text-lg font-bold text-yellow-600">$299</p>
+                  </div>
+               </div>
+
+               <!-- Producto -->
+               <div class="min-w-[280px] bg-white rounded-xl shadow-md snap-center text-center">
+                  <img src="/img/collarplata.jpg" alt="Pulsera plata" class="w-full h-48 object-cover rounded-t-xl">
+                  <div class="p-4">
+                     <h3 class="font-semibold text-gray-800">Collar de plata</h3>
+                     <p class="text-sm text-gray-500">Antes <span class="line-through">$400</span></p>
+                     <p class="text-lg font-bold text-yellow-600">$299</p>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+
+      <section id="chat" class="bg-gray-50 py-16">
+         <div id="chat-button"
+            class="fixed bottom-6 right-6 bg-yellow-600 text-white w-14 h-14 flex items-center justify-center rounded-full shadow-lg cursor-pointer hover:bg-yellow-500 transition">
+            💬
+         </div>
+
+         <!-- Ventana del chat (oculta al inicio) -->
+         <div id="chat-window"
+            class="hidden fixed bottom-20 right-6 w-80 bg-white shadow-xl rounded-2xl overflow-hidden flex flex-col">
+
+            <!-- Header -->
+            <div class="bg-yellow-600 text-white p-4 font-semibold flex justify-between items-center">
+               <span>Atención al Cliente</span>
+               <button id="close-chat" class="text-white hover:text-gray-200">✖</button>
+            </div>
+
+            <!-- Mensajes -->
+            <div id="chat-messages" class="flex-1 p-4 space-y-4 overflow-y-auto text-sm">
+               <div class="flex items-start space-x-2">
+                  <div class="bg-gray-200 text-gray-800 px-3 py-2 rounded-xl">
+                     ¡Hola! 👋 Bienvenido a <span class="font-semibold">MiJoyería</span>.
+                     ¿En qué podemos ayudarte?
+                  </div>
+               </div>
+            </div>
+
+            <!-- Input -->
+            <div class="p-3 border-t border-gray-200 flex space-x-2">
+               <input id="chat-input" type="text" placeholder="Escribe un mensaje..."
+                  class="flex-1 border border-gray-300 rounded-full px-3 py-2 focus:outline-none focus:ring-2 focus:ring-yellow-600">
+               <button id="send-btn" class="bg-yellow-600 text-white px-4 rounded-full hover:bg-yellow-500 transition">
+                  ➤
+               </button>
+            </div>
+         </div>
+      </section>
+
+   </main>
+   <footer>
+      <footer class="bg-gray-900 text-gray-300 pt-12">
+         <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-3 gap-10">
+
+            <!-- Logo & descripción -->
+            <div>
+               <h2 class="text-2xl font-bold text-white">MiJoyería</h2>
+               <p class="mt-4 text-gray-400 text-sm leading-relaxed">
+                  Piezas únicas diseñadas para brillar en cada momento especial.
+                  Elegancia, lujo y estilo en cada detalle.
+               </p>
+            </div>
+
+            <!-- Navegación -->
+            <div>
+               <h3 class="text-lg font-semibold text-white">Navegación</h3>
+               <ul class="mt-4 space-y-2">
+                  <li><a href="#" class="hover:text-yellow-400 transition">Inicio</a></li>
+                  <li><a href="#" class="hover:text-yellow-400 transition">Colección</a></li>
+                  <li><a href="#" class="hover:text-yellow-400 transition">Acerca de</a></li>
+                  <li><a href="#" class="hover:text-yellow-400 transition">Contacto</a></li>
+               </ul>
+            </div>
+
+            <!-- Contacto -->
+            <div>
+               <h3 class="text-lg font-semibold text-white">Contacto</h3>
+               <ul class="mt-4 space-y-2">
+                  <li>📍 Av. Principal 123, Ciudad</li>
+                  <li>📞 +34 600 123 456</li>
+                  <li>✉️ contacto@mijoyeria.com</li>
+               </ul>
+
+               <!-- Redes -->
+               <div class="flex space-x-4 mt-4">
+                  <a href="#" class="hover:text-yellow-400 transition">🌐</a>
+                  <a href="#" class="hover:text-yellow-400 transition">📘</a>
+                  <a href="#" class="hover:text-yellow-400 transition">📸</a>
+               </div>
+            </div>
+         </div>
+
+         <!-- Línea inferior -->
+         <div class="border-t border-gray-700 mt-10 py-6 text-center text-gray-500 text-sm">
+            © 2025 MiJoyería. Todos los derechos reservados.
+         </div>
+      </footer>
+
+   </footer>
+</body>
+<script src="/js/navbar.js"></script>
+<script src="/js/carosul.js"></script>
+<script src="/js/chat.js"></script>
+</html>
