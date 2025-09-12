@@ -16,7 +16,9 @@
 
                <!-- Logo -->
                <div class="flex items-center">
-                  <span class="text-2xl font-bold text-indigo-600">MiLogo</span>
+                  <a href="">
+                     <img src="/img/LOGO-SAYANI-CATALEYA.png" alt="" class="w-32">
+                  </a>
                </div>
 
                <!-- Menú escritorio -->
@@ -51,136 +53,138 @@
    </header>
 
    <main>
-      <section class="bg-gray-50 py-12 mt-12">
-         <div class="max-w-7xl mx-auto px-6">
-            <h2 class="text-2xl font-bold text-center text-gray-800 mb-10">
-               Nuestra Colección
-            </h2>
+      <section class="min-h-screen bg-gradient-to-b from-orange-100 via-white to-orange-50">
+         
+         <section class="py-12 mt-12">
+            <div class="max-w-7xl mx-auto px-6">
+               <h2 class="text-2xl font-bold text-center text-gray-800 mb-10">
+                  Nuestra Colección
+               </h2>
 
-            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+               <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
 
-               <!-- Producto 1 -->
-               <div class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-xl transition">
-                  <img src="producto1.jpg" alt="Anillo de oro" class="w-full h-64 object-cover">
-                  <div class="p-4 text-center">
-                     <h3 class="font-semibold text-gray-800">Anillo de oro</h3>
-                     <p class="text-yellow-600 font-bold mt-2">$1200</p>
-                     <button onclick="addToCartAndGo('Anillo de oro', 1200)"
-                        class="mt-3 bg-yellow-600 text-white px-4 py-2 rounded-lg hover:bg-yellow-500 transition">
-                        Comprar ahora
-                     </button>
+                  <!-- Producto 1 -->
+                  <div class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-xl transition">
+                     <img src="/img/anillodeoro.jpg" alt="Anillo de oro" class="w-full h-64 object-cover">
+                     <div class="p-4 text-center">
+                        <h3 class="font-semibold text-gray-800">Anillo de oro</h3>
+                        <p class="text-yellow-600 font-bold mt-2">$1200</p>
+                        <button onclick="addToCartAndGo('Anillo de oro', 1200)"
+                           class="mt-3 bg-yellow-600 text-white px-4 py-2 rounded-lg hover:bg-yellow-500 transition">
+                           Comprar ahora
+                        </button>
+                     </div>
                   </div>
-               </div>
 
-               <!-- Producto 2 -->
-               <div class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-xl transition">
-                  <img src="producto2.jpg" alt="Collar de perlas" class="w-full h-64 object-cover">
-                  <div class="p-4 text-center">
-                     <h3 class="font-semibold text-gray-800">Collar de perlas</h3>
-                     <p class="text-yellow-600 font-bold mt-2">$950</p>
-                     <button onclick="addToCartAndGo('Collar de perlas', 950)"
-                        class="mt-3 bg-yellow-600 text-white px-4 py-2 rounded-lg hover:bg-yellow-500 transition">
-                        Comprar ahora
-                     </button>
+                  <!-- Producto 2 -->
+                  <div class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-xl transition">
+                     <img src="/img/collardeperlas.jpg" alt="Collar de perlas" class="w-full h-64 object-cover">
+                     <div class="p-4 text-center">
+                        <h3 class="font-semibold text-gray-800">Collar de perlas</h3>
+                        <p class="text-yellow-600 font-bold mt-2">$950</p>
+                        <button onclick="addToCartAndGo('Collar de perlas', 950)"
+                           class="mt-3 bg-yellow-600 text-white px-4 py-2 rounded-lg hover:bg-yellow-500 transition">
+                           Comprar ahora
+                        </button>
+                     </div>
                   </div>
-               </div>
 
-               <!-- Producto 3 -->
-               <div class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-xl transition">
-                  <img src="producto3.jpg" alt="Pulsera de plata" class="w-full h-64 object-cover">
-                  <div class="p-4 text-center">
-                     <h3 class="font-semibold text-gray-800">Pulsera de plata</h3>
-                     <p class="text-yellow-600 font-bold mt-2">$480</p>
-                     <button onclick="addToCartAndGo('Pulsera de plata', 480)"
-                        class="mt-3 bg-yellow-600 text-white px-4 py-2 rounded-lg hover:bg-yellow-500 transition">
-                        Comprar ahora
-                     </button>
+                  <!-- Producto 3 -->
+                  <div class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-xl transition">
+                     <img src="/img/pulseraplata.jpg" alt="Pulsera de plata" class="w-full h-64 object-cover">
+                     <div class="p-4 text-center">
+                        <h3 class="font-semibold text-gray-800">Pulsera de plata</h3>
+                        <p class="text-yellow-600 font-bold mt-2">$480</p>
+                        <button onclick="addToCartAndGo('Pulsera de plata', 480)"
+                           class="mt-3 bg-yellow-600 text-white px-4 py-2 rounded-lg hover:bg-yellow-500 transition">
+                           Comprar ahora
+                        </button>
+                     </div>
                   </div>
-               </div>
 
-               <!-- Producto 4 -->
-               <div class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-xl transition">
-                  <img src="producto4.jpg" alt="Pendientes de diamante" class="w-full h-64 object-cover">
-                  <div class="p-4 text-center">
-                     <h3 class="font-semibold text-gray-800">Pendientes de diamante</h3>
-                     <p class="text-yellow-600 font-bold mt-2">$2100</p>
-                     <button onclick="addToCartAndGo('Pendientes de diamante', 2100)"
-                        class="mt-3 bg-yellow-600 text-white px-4 py-2 rounded-lg hover:bg-yellow-500 transition">
-                        Comprar ahora
-                     </button>
+                  <!-- Producto 4 -->
+                  <div class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-xl transition">
+                     <img src="/img/pendientesdediamante.png" alt="Pendientes de diamante" class="w-full h-64 object-cover">
+                     <div class="p-4 text-center">
+                        <h3 class="font-semibold text-gray-800">Pendientes de diamante</h3>
+                        <p class="text-yellow-600 font-bold mt-2">$2100</p>
+                        <button onclick="addToCartAndGo('Pendientes de diamante', 2100)"
+                           class="mt-3 bg-yellow-600 text-white px-4 py-2 rounded-lg hover:bg-yellow-500 transition">
+                           Comprar ahora
+                        </button>
+                     </div>
                   </div>
-               </div>
 
-               <!-- Producto 5 -->
-               <div class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-xl transition">
-                  <img src="producto5.jpg" alt="Sortija con zafiro" class="w-full h-64 object-cover">
-                  <div class="p-4 text-center">
-                     <h3 class="font-semibold text-gray-800">Sortija con zafiro</h3>
-                     <p class="text-yellow-600 font-bold mt-2">$1800</p>
-                     <button onclick="addToCartAndGo('Sortija con zafiro', 1800)"
-                        class="mt-3 bg-yellow-600 text-white px-4 py-2 rounded-lg hover:bg-yellow-500 transition">
-                        Comprar ahora
-                     </button>
+                  <!-- Producto 5 -->
+                  <div class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-xl transition">
+                     <img src="/img/zafiro.jpg" alt="Sortija con zafiro" class="w-full h-64 object-cover">
+                     <div class="p-4 text-center">
+                        <h3 class="font-semibold text-gray-800">Sortija con zafiro</h3>
+                        <p class="text-yellow-600 font-bold mt-2">$1800</p>
+                        <button onclick="addToCartAndGo('Sortija con zafiro', 1800)"
+                           class="mt-3 bg-yellow-600 text-white px-4 py-2 rounded-lg hover:bg-yellow-500 transition">
+                           Comprar ahora
+                        </button>
+                     </div>
                   </div>
-               </div>
 
-               <!-- Producto 6 -->
-               <div class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-xl transition">
-                  <img src="producto6.jpg" alt="Reloj dorado" class="w-full h-64 object-cover">
-                  <div class="p-4 text-center">
-                     <h3 class="font-semibold text-gray-800">Reloj dorado</h3>
-                     <p class="text-yellow-600 font-bold mt-2">$3400</p>
-                     <button onclick="addToCartAndGo('Reloj dorado', 3400)"
-                        class="mt-3 bg-yellow-600 text-white px-4 py-2 rounded-lg hover:bg-yellow-500 transition">
-                        Comprar ahora
-                     </button>
+                  <!-- Producto 6 -->
+                  <div class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-xl transition">
+                     <img src="/img/relojdorador.png" alt="Reloj dorado" class="w-full h-64 object-cover">
+                     <div class="p-4 text-center">
+                        <h3 class="font-semibold text-gray-800">Reloj dorado</h3>
+                        <p class="text-yellow-600 font-bold mt-2">$3400</p>
+                        <button onclick="addToCartAndGo('Reloj dorado', 3400)"
+                           class="mt-3 bg-yellow-600 text-white px-4 py-2 rounded-lg hover:bg-yellow-500 transition">
+                           Comprar ahora
+                        </button>
+                     </div>
                   </div>
-               </div>
 
-               <!-- Producto 7 -->
-               <div class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-xl transition">
-                  <img src="producto7.jpg" alt="Brazalete elegante" class="w-full h-64 object-cover">
-                  <div class="p-4 text-center">
-                     <h3 class="font-semibold text-gray-800">Brazalete elegante</h3>
-                     <p class="text-yellow-600 font-bold mt-2">$690</p>
-                     <button onclick="addToCartAndGo('Brazalete elegante', 690)"
-                        class="mt-3 bg-yellow-600 text-white px-4 py-2 rounded-lg hover:bg-yellow-500 transition">
-                        Comprar ahora
-                     </button>
+                  <!-- Producto 7 -->
+                  <div class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-xl transition">
+                     <img src="/img/brazaleteelegante.jpg" alt="Brazalete elegante" class="w-full h-64 object-cover">
+                     <div class="p-4 text-center">
+                        <h3 class="font-semibold text-gray-800">Brazalete elegante</h3>
+                        <p class="text-yellow-600 font-bold mt-2">$690</p>
+                        <button onclick="addToCartAndGo('Brazalete elegante', 690)"
+                           class="mt-3 bg-yellow-600 text-white px-4 py-2 rounded-lg hover:bg-yellow-500 transition">
+                           Comprar ahora
+                        </button>
+                     </div>
                   </div>
-               </div>
 
-               <!-- Producto 8 -->
-               <div class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-xl transition">
-                  <img src="producto8.jpg" alt="Collar con rubí" class="w-full h-64 object-cover">
-                  <div class="p-4 text-center">
-                     <h3 class="font-semibold text-gray-800">Collar con rubí</h3>
-                     <p class="text-yellow-600 font-bold mt-2">$2500</p>
-                     <button onclick="addToCartAndGo('Collar con rubí', 2500)"
-                        class="mt-3 bg-yellow-600 text-white px-4 py-2 rounded-lg hover:bg-yellow-500 transition">
-                        Comprar ahora
-                     </button>
+                  <!-- Producto 8 -->
+                  <div class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-xl transition">
+                     <img src="/img/collarrubi.jpg" alt="Collar con rubí" class="w-full h-64 object-cover">
+                     <div class="p-4 text-center">
+                        <h3 class="font-semibold text-gray-800">Collar con rubí</h3>
+                        <p class="text-yellow-600 font-bold mt-2">$2500</p>
+                        <button onclick="addToCartAndGo('Collar con rubí', 2500)"
+                           class="mt-3 bg-yellow-600 text-white px-4 py-2 rounded-lg hover:bg-yellow-500 transition">
+                           Comprar ahora
+                        </button>
+                     </div>
                   </div>
-               </div>
 
-               <!-- Producto 9 -->
-               <div class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-xl transition">
-                  <img src="producto9.jpg" alt="Pendientes de plata" class="w-full h-64 object-cover">
-                  <div class="p-4 text-center">
-                     <h3 class="font-semibold text-gray-800">Pendientes de plata</h3>
-                     <p class="text-yellow-600 font-bold mt-2">$350</p>
-                     <button onclick="addToCartAndGo('Pendientes de plata', 350)"
-                        class="mt-3 bg-yellow-600 text-white px-4 py-2 rounded-lg hover:bg-yellow-500 transition">
-                        Comprar ahora
-                     </button>
+                  <!-- Producto 9 -->
+                  <div class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-xl transition">
+                     <img src="/img/pendientesdeplata.jpg" alt="Pendientes de plata" class="w-full h-64 object-cover">
+                     <div class="p-4 text-center">
+                        <h3 class="font-semibold text-gray-800">Pendientes de plata</h3>
+                        <p class="text-yellow-600 font-bold mt-2">$350</p>
+                        <button onclick="addToCartAndGo('Pendientes de plata', 350)"
+                           class="mt-3 bg-yellow-600 text-white px-4 py-2 rounded-lg hover:bg-yellow-500 transition">
+                           Comprar ahora
+                        </button>
+                     </div>
                   </div>
-               </div>
 
+               </div>
             </div>
-         </div>
+         </section>
       </section>
    </main>
-
 
    <footer>
       <footer class="bg-gray-900 text-gray-300 pt-12">

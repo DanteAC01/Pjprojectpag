@@ -16,7 +16,9 @@
 
                <!-- Logo -->
                <div class="flex items-center">
-                  <span class="text-2xl font-bold text-indigo-600">MiLogo</span>
+                  <a href="">
+                     <img src="/img/LOGO-SAYANI-CATALEYA.png" alt="" class="w-32">
+                  </a>
                </div>
 
                <!-- Menú escritorio -->
@@ -51,68 +53,71 @@
    </header>
 
    <main>
-      <section id="contacto" class="bg-gray-100 py-16">
-         <div class="max-w-7xl mx-auto px-6 lg:px-8">
-            <h2 class="text-3xl font-bold text-center text-gray-800 mb-12 mt-12">
-               Contáctanos 📩
-            </h2>
+      <div  class="min-h-screen bg-gradient-to-b from-orange-100 via-white to-orange-50">
 
-            <div class="grid lg:grid-cols-2 gap-12">
+         <section id="contacto" class="py-16">
+            <div class="max-w-7xl mx-auto px-6 lg:px-8">
+               <h2 class="text-3xl font-bold text-center text-gray-800 mb-12 mt-12">
+                  Contáctanos 📩
+               </h2>
 
-               <!-- Información de contacto -->
-               <div class="bg-white rounded-2xl shadow-md p-8">
-                  <h3 class="text-xl font-semibold text-gray-800 mb-4">Información</h3>
-                  <p class="text-gray-600 mb-6">
-                     Si deseas más información sobre nuestras joyas, colecciones o servicios personalizados,
-                     no dudes en ponerte en contacto con nosotros.
-                     Estaremos encantados de atenderte.
-                  </p>
-                  <ul class="space-y-3 text-gray-700">
-                     <li>📍 Av. Principal 123, Ciudad</li>
-                     <li>📞 +34 600 123 456</li>
-                     <li>✉️ contacto@mijoyeria.com</li>
-                  </ul>
+               <div class="grid lg:grid-cols-2 gap-12">
 
-                  <!-- Redes sociales -->
-                  <div class="flex space-x-4 mt-6">
-                     <a href="#" class="hover:text-yellow-600 transition">🌐</a>
-                     <a href="#" class="hover:text-yellow-600 transition">📘</a>
-                     <a href="#" class="hover:text-yellow-600 transition">📸</a>
+                  <!-- Información de contacto -->
+                  <div class="bg-white rounded-2xl shadow-md p-8">
+                     <h3 class="text-xl font-semibold text-gray-800 mb-4">Información</h3>
+                     <p class="text-gray-600 mb-6">
+                        Si deseas más información sobre nuestras joyas, colecciones o servicios personalizados,
+                        no dudes en ponerte en contacto con nosotros.
+                        Estaremos encantados de atenderte.
+                     </p>
+                     <ul class="space-y-3 text-gray-700">
+                        <li>📍 Av. Principal 123, Ciudad</li>
+                        <li>📞 +34 600 123 456</li>
+                        <li>✉️ contacto@mijoyeria.com</li>
+                     </ul>
+
+                     <!-- Redes sociales -->
+                     <div class="flex space-x-4 mt-6">
+                        <a href="#" class="hover:text-yellow-600 transition">🌐</a>
+                        <a href="#" class="hover:text-yellow-600 transition">📘</a>
+                        <a href="#" class="hover:text-yellow-600 transition">📸</a>
+                     </div>
+                  </div>
+
+                  <!-- Formulario -->
+                  <div class="bg-white rounded-2xl shadow-md p-8">
+                     <h3 class="text-xl font-semibold text-gray-800 mb-4">Envíanos un mensaje</h3>
+                     <form action="#" method="POST" class="space-y-5">
+
+                        <div>
+                           <label for="nombre" class="block text-gray-700 font-medium mb-2">Nombre</label>
+                           <input type="text" id="nombre" name="nombre" required
+                              class="w-full border border-gray-300 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-yellow-600">
+                        </div>
+
+                        <div>
+                           <label for="email" class="block text-gray-700 font-medium mb-2">Correo</label>
+                           <input type="email" id="email" name="email" required
+                              class="w-full border border-gray-300 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-yellow-600">
+                        </div>
+
+                        <div>
+                           <label for="mensaje" class="block text-gray-700 font-medium mb-2">Mensaje</label>
+                           <textarea id="mensaje" name="mensaje" rows="4" required
+                              class="w-full border border-gray-300 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-yellow-600"></textarea>
+                        </div>
+
+                        <button type="submit"
+                           class="w-full bg-blue-950 text-white font-semibold py-3 px-6 rounded-lg shadow-md hover:bg-gray-700 transition">
+                           Enviar Mensaje
+                        </button>
+                     </form>
                   </div>
                </div>
-
-               <!-- Formulario -->
-               <div class="bg-white rounded-2xl shadow-md p-8">
-                  <h3 class="text-xl font-semibold text-gray-800 mb-4">Envíanos un mensaje</h3>
-                  <form action="#" method="POST" class="space-y-5">
-
-                     <div>
-                        <label for="nombre" class="block text-gray-700 font-medium mb-2">Nombre</label>
-                        <input type="text" id="nombre" name="nombre" required
-                           class="w-full border border-gray-300 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-yellow-600">
-                     </div>
-
-                     <div>
-                        <label for="email" class="block text-gray-700 font-medium mb-2">Correo</label>
-                        <input type="email" id="email" name="email" required
-                           class="w-full border border-gray-300 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-yellow-600">
-                     </div>
-
-                     <div>
-                        <label for="mensaje" class="block text-gray-700 font-medium mb-2">Mensaje</label>
-                        <textarea id="mensaje" name="mensaje" rows="4" required
-                           class="w-full border border-gray-300 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-yellow-600"></textarea>
-                     </div>
-
-                     <button type="submit"
-                        class="w-full bg-blue-950 text-white font-semibold py-3 px-6 rounded-lg shadow-md hover:bg-gray-700 transition">
-                        Enviar Mensaje
-                     </button>
-                  </form>
-               </div>
             </div>
-         </div>
-      </section>
+         </section>
+      </div>
    </main>
    <footer>
       <footer class="bg-gray-900 text-gray-300 pt-12">

@@ -55,7 +55,7 @@ document.addEventListener("DOMContentLoaded", renderCart);
 
   function registerAndCheckout() {
     closeRegisterModal();
-    alert("🎉 ¡Gracias por registrarte! Tu compra ha sido procesada.");
+    alert("🎉 ¡Gracias por registrarte!.");
     // Aquí puedes redirigir a una página de confirmación si quieres
     // window.location.href = "/pages/confirmacion.html";
   }
