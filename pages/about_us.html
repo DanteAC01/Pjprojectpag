@@ -23,10 +23,11 @@
 
                <!-- Menú escritorio -->
                <div class="hidden md:flex space-x-6 items-center">
-                  <a href="/index.html" class="text-gray-700 hover:text-indigo-600 font-medium">Inicio</a>
-                  <a href="/pages/galery.html" class="text-gray-700 hover:text-indigo-600 font-medium">Galeria</a>
-                  <a href="/pages/about_us.html" class="text-gray-700 hover:text-indigo-600 font-medium">Acerca de</a>
-                  <a href="/pages/contact.html" class="text-gray-700 hover:text-indigo-600 font-medium">Contacto</a>
+                  <a href="/index.html" class="text-gray-700 hover:text-orange-600 font-medium">Inicio</a>
+                  <a href="/pages/galery.html" class="text-gray-700 hover:text-orange-600 font-medium">Galeria</a>
+                  <a href="/pages/about_us.html" class="text-gray-700 hover:text-orange-600 font-medium">Acerca de</a>
+                  <a href="/pages/contact.html" class="text-gray-700 hover:text-orange-600 font-medium">Contacto</a>
+                  <a href="/pages/shopping.html" class="text-gray-700 hover:text-orange-600 font-medium">Carrito</a>
                </div>
 
                <!-- Botón hamburguesa -->
@@ -42,19 +43,17 @@
 
          <!-- Menú móvil -->
          <div id="mobile-menu" class="hidden md:hidden px-4 pb-4">
-            <a href="/index.html" class="block py-2 text-gray-700 hover:text-indigo-600 font-medium">Inicio</a>
-            <a href="/pages/galery.html" class="block py-2 text-gray-700 hover:text-indigo-600 font-medium">Galeria</a>
-            <a href="/pages/about_us.html" class="block py-2 text-gray-700 hover:text-indigo-600 font-medium">Acerca
-               de</a>
-            <a href="/pages/contact.html"
-               class="block py-2 text-gray-700 hover:text-indigo-600 font-medium">Nosotros</a>
+            <a href="/index.html" class="block py-2 text-gray-700 hover:text-orange-600 font-medium">Inicio</a>
+            <a href="/pages/galery.html" class="block py-2 text-gray-700 hover:text-orange-600 font-medium">Galeria</a>
+            <a href="/pages/about_us.html" class="block py-2 text-gray-700 hover:text-orange-600 font-medium">Acerca de</a>
+            <a href="/pages/contact.html" class="block py-2 text-gray-700 hover:text-orange-600 font-medium">Contacto</a>
+            <a href="/pages/shopping.html" class="block py-2 text-gray-700 hover:text-orange-600 font-medium">Carrito</a>
          </div>
       </nav>
    </header>
 
    <main>
-      <section  class="min-h-screen bg-gradient-to-b from-orange-100 via-white to-orange-50">
-
+      <div  class="min-h-screen bg-gradient-to-b from-orange-100 via-white to-orange-50">
          <section class="py-16 mt-10">
             <div class="max-w-7xl mx-auto px-6 lg:px-8 grid lg:grid-cols-2 gap-12 items-center">
 
@@ -143,7 +142,50 @@
 
             </div>
          </section>
-      </section>
+         <section class="py-16" id="ubicaciones">
+            <div class="max-w-7xl mx-auto px-6 lg:px-8 text-center">
+               
+               <h2 class="text-3xl font-bold text-gray-800 mb-12">
+                  Nuestras Tiendas 🏬
+               </h2>
+               
+               <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                  
+                  <div class="bg-white shadow-lg rounded-xl overflow-hidden hover:shadow-2xl transition">
+                  <img src="/img/tienda1.jpg" alt="Sucursal Miraflores"
+                        class="w-full h-56 object-cover">
+                  <div class="p-6">
+                     <h3 class="font-semibold text-xl text-gray-800 mb-2">Sucursal Miraflores</h3>
+                     <p class="text-gray-600">Av. Larco 123, Lima</p>
+                     <p class="text-gray-600">Horario: 10:00 - 20:00</p>
+                  </div>
+                  </div>
+
+                  <div class="bg-white shadow-lg rounded-xl overflow-hidden hover:shadow-2xl transition">
+                  <img src="/img/tienda2.jpg" alt="Sucursal San Isidro"
+                        class="w-full h-56 object-cover">
+                  <div class="p-6">
+                     <h3 class="font-semibold text-xl text-gray-800 mb-2">Sucursal San Isidro</h3>
+                     <p class="text-gray-600">Av. Javier Prado 456, Lima</p>
+                     <p class="text-gray-600">Horario: 11:00 - 21:00</p>
+                  </div>
+                  </div>
+
+                  <div class="bg-white shadow-lg rounded-xl overflow-hidden hover:shadow-2xl transition">
+                  <img src="/img/tienda3.jpg" alt="Sucursal Arequipa"
+                        class="w-full h-56 object-cover">
+                  <div class="p-6">
+                     <h3 class="font-semibold text-xl text-gray-800 mb-2">Sucursal Arequipa</h3>
+                     <p class="text-gray-600">Calle Mercaderes 789</p>
+                     <p class="text-gray-600">Horario: 09:30 - 19:30</p>
+                  </div>
+                  </div>
+
+               </div>
+            </div>
+         </section>
+
+      </div>
    </main>
    <footer>
       <footer class="bg-gray-900 text-gray-300 pt-12">
@@ -162,10 +204,10 @@
             <div>
                <h3 class="text-lg font-semibold text-white">Navegación</h3>
                <ul class="mt-4 space-y-2">
-                  <li><a href="#" class="hover:text-yellow-400 transition">Inicio</a></li>
-                  <li><a href="#" class="hover:text-yellow-400 transition">Colección</a></li>
-                  <li><a href="#" class="hover:text-yellow-400 transition">Acerca de</a></li>
-                  <li><a href="#" class="hover:text-yellow-400 transition">Contacto</a></li>
+                  <li><a href="/index.html" class="hover:text-yellow-400 transition">Inicio</a></li>
+                  <li><a href="/pages/galery.html" class="hover:text-yellow-400 transition">Colección</a></li>
+                  <li><a href="/pages/about_us.html" class="hover:text-yellow-400 transition">Acerca de</a></li>
+                  <li><a href="/pages/contact.html" class="hover:text-yellow-400 transition">Contacto</a></li>
                </ul>
             </div>
 
