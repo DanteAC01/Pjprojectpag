@@ -23,7 +23,7 @@ function renderCart() {
         <div class="flex justify-between items-center border-b border-gray-200 pb-3">
           <div>
             <h3 class="font-semibold text-gray-800">${item.name}</h3>
-            <p class="text-yellow-600">$${item.price}</p>
+            <p class="text-yellow-600">S/. ${item.price}</p>
           </div>
           <button onclick="removeFromCart(${index})" 
             class="text-red-500 hover:text-red-700">Eliminar</button>
@@ -31,7 +31,7 @@ function renderCart() {
       `;
    });
 
-   cartTotal.textContent = `$${total}`;
+   cartTotal.textContent = `S/. ${total}`;
 }
 
 // Eliminar producto
@@ -55,7 +55,5 @@ document.addEventListener("DOMContentLoaded", renderCart);
 
   function registerAndCheckout() {
     closeRegisterModal();
-    alert("🎉 ¡Gracias por registrarte!.");
-    // Aquí puedes redirigir a una página de confirmación si quieres
-    // window.location.href = "/pages/confirmacion.html";
+    alert("🎉 ¡Gracias por registrarte!. Se enviará un correo con la confirmación de su cuenta.");
   }
