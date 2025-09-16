@@ -5,6 +5,7 @@
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
    <title>Tienda | Joyería</title>
 </head>
 
@@ -53,37 +54,87 @@
    </header>
    <main>
       <div class="min-h-screen bg-gradient-to-b from-orange-100 via-white to-orange-50">
-         <section>
-            <div class="max-w-7xl mx-auto px-6 lg:px-8 py-20 grid md:grid-cols-2 gap-12 items-center">
+         
+         <section class="py-20">
+            <div class="swiper mySwiper max-w-7xl mx-auto px-6 lg:px-8">
+               <div class="swiper-wrapper">
 
-               <!-- Texto -->
-               <div class="space-y-6">
-                  <p class="text-sm tracking-wide text-gray-600">
-                     Brillo que cautiva, una joya tan única como tú.
-                  </p>
-                  <h1 class="text-5xl font-extrabold tracking-tight">
-                     <span class="text-gray-900">Colección</span>
-                     <span class="bg-gradient-to-r from-yellow-400 to-yellow-600 bg-clip-text text-transparent">
-                        Corazón del sol
-                     </span>
-                  </h1>
-                  <p class="text-lg text-gray-700">
-                     Una colección diseñada para reflejar tu elegancia con sutileza y frescura.
-                  </p>
-                  <a href="#"
-                     class="inline-block px-6 py-3 rounded-full bg-gradient-to-r from-yellow-300 to-yellow-500 hover:from-yellow-400 hover:to-yellow-600 transition text-gray-900 font-semibold shadow-md">
-                     Comprar ahora
-                  </a>
+                  <!-- Slide 1 -->
+                  <div class="swiper-slide relative bg-gradient-to-br from-orange-800 to-amber-950 overflow-hidden flex items-center justify-center min-h-[500px]">
+                     
+                     <div class="absolute inset-0 flex justify-end items-center">
+                        <img src="/img/brillodelsol.png" alt="Colección Corazón del sol" class="h-full w-auto object-cover opacity-80 z-0">
+                     </div>
+
+                     <div class="relative z-10 max-w-xl mx-auto md:mx-0 px-6 py-12 md:p-12 text-white text-left">
+                        <p class="text-sm tracking-wide text-gray-200">Brillo que cautiva, una joya tan única como tú.</p>
+                        <h1 class="text-5xl font-extrabold tracking-tight mt-2">
+                              <span class="text-white">Colección</span>
+                              <span class="bg-gradient-to-r from-yellow-300 to-yellow-500 bg-clip-text text-transparent">
+                                 Corazón del sol
+                              </span>
+                        </h1>
+                        <p class="text-lg text-gray-300 mt-4">Una colección diseñada para reflejar tu elegancia con sutileza y frescura.</p>
+                        <a href="#"
+                           class="mt-8 inline-block px-8 py-4 rounded-full bg-gradient-to-r from-yellow-500 to-yellow-700 hover:from-yellow-600 hover:to-yellow-800 transition text-white font-semibold shadow-lg text-lg">
+                              Comprar ahora
+                        </a>
+                     </div>
+                  </div>
+
+                  <!-- Slide 2 -->
+                  <div class="swiper-slide relative bg-gradient-to-br from-black to-gray-900 overflow-hidden flex items-center justify-center min-h-[500px]">
+                     <div class="absolute inset-0 flex justify-end items-center">
+                        <img src="/img/nocheestelar.png" alt="Colección Noche estelar" class="h-full w-auto object-cover opacity-80 z-0">
+                     </div>
+
+                     <div class="relative z-10 max-w-xl mx-auto md:mx-0 px-6 py-12 md:p-12 text-white text-left">
+                        <p class="text-sm tracking-wide text-gray-200">Lujo en cada detalle.</p>
+                        <h1 class="text-5xl font-extrabold tracking-tight mt-2">
+                              <span class="text-white">Colección</span>
+                              <span class="bg-gradient-to-r from-indigo-300 to-indigo-500 bg-clip-text text-transparent">
+                                 Noche estelar
+                              </span>
+                        </h1>
+                        <p class="text-lg text-gray-300 mt-4">Inspirada en la magia del cielo nocturno.</p>
+                        <a href="#"
+                           class="mt-8 inline-block px-8 py-4 rounded-full bg-gradient-to-r from-indigo-500 to-indigo-700 hover:from-indigo-600 hover:to-indigo-800 transition text-white font-semibold shadow-lg text-lg">
+                              Comprar ahora
+                        </a>
+                     </div>
+                  </div>
+
+                  <!-- Slide 3 -->
+                  <div class="swiper-slide relative bg-gradient-to-br from-purple-950 to-pink-950 overflow-hidden flex items-center justify-center min-h-[500px]">
+
+                     <div class="absolute inset-0 flex justify-end items-center">
+                        <img src="/img/floral.png" alt="Colección Elegancia eterna" class="h-full w-auto object-cover opacity-80 z-0">
+                     </div>
+
+                     <div class="relative z-10 max-w-xl mx-auto md:mx-0 px-6 py-12 md:p-12 text-white text-left">
+                        <p class="text-sm tracking-wide text-gray-200">Un toque de distinción.</p>
+                        <h1 class="text-5xl font-extrabold tracking-tight mt-2">
+                              <span class="text-white">Colección</span>
+                              <span class="bg-gradient-to-r from-pink-300 to-pink-500 bg-clip-text text-transparent">
+                                 Elegancia eterna
+                              </span>
+                        </h1>
+                        <p class="text-lg text-gray-300 mt-4">Diseños atemporales para cada ocasión especial.</p>
+                        <a href="floral"
+                           class="mt-8 inline-block px-8 py-4 rounded-full bg-gradient-to-r from-pink-500 to-pink-700 hover:from-pink-600 hover:to-pink-800 transition text-white font-semibold shadow-lg text-lg">
+                              Comprar ahora
+                        </a>
+                     </div>
+                  </div>
+
                </div>
 
-               <!-- Imagen -->
-               <div class="flex justify-center">
-                  <img src="/img/exhibicion-cadena-oro-brillante-elegante.png" alt="Colección Corazón del sol"
-                     class="w-[400px] drop-shadow-xl">
-               </div>
-
+               <!-- Paginación y botones -->
+               <div class="swiper-button-next"></div>
+               <div class="swiper-button-prev"></div>
             </div>
          </section>
+
 
          <section class="py-12">
             <div class="max-w-7xl mx-auto px-6 relative">
@@ -326,6 +377,7 @@
       </div>
    </footer>
 </body>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 <script src="/js/navbar.js"></script>
 <script src="/js/carosul.js"></script>
 <script src="/js/chat.js"></script>
